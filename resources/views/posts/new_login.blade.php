@@ -47,6 +47,7 @@
             </div>
             <div class="item no-label">
                 <input type="submit" value="新規ログイン">
+                <a href="/"><p>Homeに戻る</p></a>
             </div>
         </form>
     </body>

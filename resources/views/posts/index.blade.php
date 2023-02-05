@@ -113,7 +113,6 @@
                         <input type="submit" value="投稿">
                     </div>
                 </form>
-  
             </div>
         </div>
     </body>

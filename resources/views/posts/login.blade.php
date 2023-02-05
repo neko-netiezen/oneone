@@ -21,6 +21,7 @@
             </div>
             <div class="new_login">
                 <a href="/posts/new_login">新規ログインはこちら</a>
+                <a href="/"><p>Homeに戻る</p></a>
             </div>
         </form>
     </body>

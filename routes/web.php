@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
-
+use App\Http\Controllers\PostController;      //追加
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,5 +12,6 @@ use App\Http\Controllers\PostController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', [PostController::class, 'index']);
+Route::get('/posts/login', [PostController::class, 'login']);
+Route::get('/posts/new_login', [PostController::class, 'new_login']);

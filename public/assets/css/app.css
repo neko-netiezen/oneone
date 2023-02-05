@@ -1,3 +1,5 @@
+
+
 /*タブ切り替え全体のスタイル*/
 .tabs {
     margin-top: 50px;
@@ -35,7 +37,7 @@
     padding: 40px 40px 0;
     clear: both;
     overflow: hidden;
-    height:300vh;
+    height:110vh;
   }
   
   
@@ -55,24 +57,27 @@
     background-color: #2F4F4F;
     color: #fff;
   }
-
- .title_box {
+  
+  .title_image {
+    width: 100%; 
+    object-fit: cover; 
+    object-position: 50% 50%; 
     position: relative;
- }
-
- .title1 {
+  }
+  
+ .title2 {
+    position: absolute;
     font: var(--font_3);
     color: #6b5abf;
     font-size: 70px;
-    position: absolute;
-    top: 20%;
+    top: 27%;
     left:41%;
  }
 
  .login {
+    position: absolute;
     color: white;
     font-size: 23px;
-    position: absolute;
     top: 50%;
     left: 48%;
     background:#5d62bf; /*背景色の指定*/
@@ -81,7 +86,6 @@
 }
  
 .topic_img {
-    background-color: red;
     width:100%;
     height:500px;
     margin:0 auto;
@@ -89,6 +93,208 @@
 }
 
 .topic_img img {
-    width: 20%;
-    height: auto;
+    width: 10%;
+    height: 100px;
 }
+
+
+
+/*投稿画面*/
+.contact-form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+  }
+  .contact-form .item {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .contact-form .item.no-label {
+    padding: 5px 0px 5px 60px;
+  }
+  .contact-form .item .label {
+    float: left;
+    padding: 5px;
+    margin:0;
+  }
+  .contact-form .item .radio-group{
+    padding: 5px 0px 5px 60px;
+  }
+  .contact-form .item input[type=text],
+  .contact-form .item input[type=email],
+  .contact-form .item input[type=date],
+  .contact-form .item input[type=url],
+  .contact-form .item input[type=color],
+  .contact-form .item input[type=image],
+  .contact-form .item textarea {
+    display: block;
+    margin-left: 60px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 13px;
+  }
+  .contact-form .item ::placeholder {
+    color: #ccc;
+  }
+  .contact-form .item textarea {
+    outline: none;
+    border: 1px solid #ccc;
+    resize: vertical;
+  }
+  input[type=submit] {
+    border: none;
+    outline: none;
+    display: block;
+    line-height: 30px;
+    width: 160px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    background-color: #696;
+    border-bottom: 4px solid #464;
+    cursor:pointer;
+  
+    box-sizing: content-box;
+    transition:0.3s ease all
+  }
+  input[type=submit]:hover{
+    border-bottom-width:0;
+    transform:translateY(4px)
+  }
+  
+  
+  /* ログイン画面 */
+  .contact-form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+  }
+  .contact-form .item {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .contact-form .item.no-label {
+    padding: 5px 0px 5px 60px;
+  }
+  .contact-form .item .label {
+    float: left;
+    padding: 5px;
+    margin:0;
+  }
+  .contact-form .item .radio-group{
+    padding: 5px 0px 5px 60px;
+  }
+  .contact-form .item input[type=text],
+  .contact-form .item input[type=email],
+  .contact-form .item input[type=passward],
+  .contact-form .item textarea {
+    display: block;
+    margin-left: 60px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 13px;
+  }
+  .contact-form .item ::placeholder {
+    color: #ccc;
+  }
+  .contact-form .item textarea {
+    outline: none;
+    border: 1px solid #ccc;
+    resize: vertical;
+  }
+  input[type=submit] {
+    border: none;
+    outline: none;
+    display: block;
+    line-height: 30px;
+    width: 160px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    background-color: #696;
+    border-bottom: 4px solid #464;
+    cursor:pointer;
+  
+    box-sizing: content-box;
+    transition:0.3s ease all
+  }
+  input[type=submit]:hover{
+    border-bottom-width:0;
+    transform:translateY(4px)
+  }
+  .new_login {
+    margin-left: 60px;
+  }
+  
+  /* 新規ログイン */
+  .contact-form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+  }
+  .contact-form .item {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .contact-form .item.no-label {
+    padding: 5px 0px 5px 60px;
+  }
+  .contact-form .item .label {
+    float: left;
+    padding: 5px;
+    margin:0;
+  }
+  .contact-form .item .radio-group{
+    padding: 5px 0px 5px 60px;
+  }
+  .contact-form .item input[type=text],
+  .contact-form .item input[type=email],
+  .contact-form .item input[type=passward],
+  .contact-form .item input[type=number],
+  .contact-form .item textarea {
+    display: block;
+    margin-left: 60px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 13px;
+  }
+  .contact-form .item ::placeholder {
+    color: #ccc;
+  }
+  .contact-form .item textarea {
+    outline: none;
+    border: 1px solid #ccc;
+    resize: vertical;
+  }
+  input[type=submit] {
+    border: none;
+    outline: none;
+    display: block;
+    line-height: 30px;
+    width: 160px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    background-color: #696;
+    border-bottom: 4px solid #464;
+    cursor:pointer;
+  
+    box-sizing: content-box;
+    transition:0.3s ease all
+  }
+  input[type=submit]:hover{
+    border-bottom-width:0;
+    transform:translateY(4px)
+  }

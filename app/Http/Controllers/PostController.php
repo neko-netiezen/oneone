@@ -11,5 +11,15 @@ class PostController extends Controller
     {
         return view('posts/index')->with(['posts' => $post->get()]);
     }
+    
+    public function login(Post $post)
+    {
+        return view('posts/login')->with(['post' => $post]);
+    }
+    
+    public function new_login(Post $post)
+    {
+        return view('posts/new_login')->with(['post' => $post]);
+    }
 }
 ?>

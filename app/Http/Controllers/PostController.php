@@ -21,5 +21,10 @@ class PostController extends Controller
     {
         return view('posts/new_login')->with(['post' => $post]);
     }
+    
+    public function welcome(Post $post)
+    {
+        return view('posts/welcome')->with(['posts' => $post->get()]);
+    }
 }
 ?>
